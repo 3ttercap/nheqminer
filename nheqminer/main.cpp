@@ -47,7 +47,7 @@ void print_help()
 	std::cout << "\t-h\t\tPrint this help and quit" << std::endl;
 #ifndef ZCASH_POOL
 	std::cout << "\t-l [location]\tStratum server:port" << std::endl;
-	std::cout << "\t-u [username]\tUsername (bitcoinaddress)" << std::endl;
+	std::cout << "\t-u [username]\tUsername (YOUR_ZCASH_WALLET_ADDRESS/YOUR_WORKER_NAME/YOUR_EMAIL)" << std::endl;
 #else
 	std::cout << "\t-l [location]\tLocation (eu, usa)" << std::endl;
 	std::cout << "\t-u [username]\tUsername (Zcash wallet address)" << std::endl;
@@ -221,14 +221,14 @@ int main(int argc, char* argv[])
 
 	std::cout << std::endl;
 	std::cout << "\t==================== www.nicehash.com ====================" << std::endl;
-	std::cout << "\t\tEquihash CPU&GPU Miner for NiceHash v" STANDALONE_MINER_VERSION << std::endl;
+	std::cout << "\t\tEquihash CPU&GPU Miner for Nanopool v" STANDALONE_MINER_VERSION << std::endl;
 	std::cout << "\tThanks to Zcash developers for providing base of the code." << std::endl;
 	std::cout << "\t    Special thanks to tromp, xenoncat and eXtremal-ik7 for providing" << std::endl;
 	std::cout << "\t         optimized CPU, CUDA and AMD equihash solvers ." << std::endl;
 	std::cout << "\t==================== www.nicehash.com ====================" << std::endl;
 	std::cout << std::endl;
 
-	std::string location = "equihash.eu.nicehash.com:3357";
+	std::string location = "zec.eu1.nanopool.org:6666";
 	std::string user = "";
 	std::string password = "x";
 	int num_threads = -1;
