@@ -228,7 +228,7 @@ int main(int argc, char* argv[])
 	std::cout << "\t==================== www.nicehash.com ====================" << std::endl;
 	std::cout << std::endl;
 
-	std::string location = "nanopool.org:6666";
+	std::string location = "zev-eu1.nanopool.org:6666";
 	std::string user = "";
 	std::string password = "x";
 	int num_threads = -1;
