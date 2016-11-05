@@ -26,7 +26,7 @@ Working solvers CPU_TROMP, CPU_XENONCAT, CUDA_TROMP, OCL_XMP, OCL_SILENTARMY
 ## Linux (Ubuntu 14.04 / 16.04) Build CPU_XENONCAT:
 
  - Open terminal and run the following commands:
-   - `sudo apt-get install cmake build-essential libboost-all-dev`
+   - `sudo apt-get install git cmake build-essential libboost-all-dev`
    - `git clone -b Linux https://github.com/nanopool/nheqminer.git`
    - `cd nheqminer/cpu_xenoncat/Linux/asm/`
    - `sh assemble.sh`
