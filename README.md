@@ -26,7 +26,7 @@ Working solvers CPU_TROMP, CPU_XENONCAT, CUDA_TROMP, OCL_XMP, OCL_SILENTARMY
 ## Linux (Ubuntu 14.04 / 16.04) Build CPU_XENONCAT:
 
  - Open terminal and run the following commands:
-   - `sudo apt-get install cmake build-essential libboost-all-dev`
+   - `sudo apt-get install git cmake build-essential libboost-all-dev`
    - `git clone -b Linux https://github.com/nanopool/nheqminer.git`
    - `cd nheqminer/cpu_xenoncat/Linux/asm/`
    - `sh assemble.sh`
@@ -46,7 +46,7 @@ Working solvers CPU_TROMP, CPU_XENONCAT, CUDA_TROMP, OCL_XMP, OCL_SILENTARMY
    - `sudo apt-get update`
    - `sudo apt-get install cuda`
    - `sudo apt-get install cuda-toolkit-8-0`
-   - `sudo apt-get install cmake build-essential libboost-all-dev`
+   - `sudo apt-get install git cmake build-essential libboost-all-dev`
    - `git clone -b Linux https://github.com/nanopool/nheqminer.git`
    - `cd nheqminer/Linux_cmake/nheqminer_cuda_tromp && cmake . && make -j $(nproc)`
    - or specify your compute version for example 50 like so `cd nheqminer/Linux_cmake/nheqminer_cuda_tromp && cmake COMPUTE=50 . && make`
@@ -58,7 +58,7 @@ Working solvers CPU_TROMP, CPU_XENONCAT, CUDA_TROMP, OCL_XMP, OCL_SILENTARMY
    - and make sure you have the [AMD drivers](http://support.amd.com/en-us/download) installed
    - install them to the default paths
    - `sudo apt-get install mesa-common-dev`
-   - `sudo apt-get install cmake build-essential libboost-all-dev`
+   - `sudo apt-get install git cmake build-essential libboost-all-dev`
    - `git clone -b Linux https://github.com/nicehash/nheqminer.git`
    - `cd nheqminer/Linux_cmake/nheqminer_AMD && cmake . -DOPENCL_LIBRARY=/usr/lib/x86_64-linux-gnu/libOpenCL.so -DOPENCL_INCLUDE_DIRECTORY=/opt/AMDAPPSDK-3.0/include && make -j $(nproc)`
    - `cp ../../3rdparty/amd_bins_linux/* -r .`
